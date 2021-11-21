@@ -11,7 +11,7 @@ jobs:
       matrix:
         node: [ 16 ]
     steps:
-      - name: UNIT TEST with ${{ matrix.node }}
+      - name: UNIT TEST with node V${{ matrix.node }}
         uses: actions/checkout@v2
       - run: npm install
       - run: npm run lint
