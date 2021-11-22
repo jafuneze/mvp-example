@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./app-root-ui.component.scss']
 })
 export class AppRootUiComponent {
-  @Input() title = '';
+  @Input() title: string;
 
 }

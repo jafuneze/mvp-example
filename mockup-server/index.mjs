@@ -41,7 +41,7 @@ async function start() {
     });
 
     await server.start();
-    server.log(['info'], `Items end point running at: ${server.info.uri}/items`);
+    server.log(['info'], `Items end point running at: ${server.info.uri}/v0/items`);
 
     return server;
 

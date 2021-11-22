@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { ListUiComponent } from './list-ui/list-ui.component';
+import { ContainerComponent } from './list-ui/container/container.component';
 
 export const itemsRoutes: Routes = [
-    {path: '', component: ListUiComponent}
+    {path: '', component: ContainerComponent}
     // add more items routes here
 ];

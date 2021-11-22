@@ -6,6 +6,7 @@ import { ContainerComponent } from './app-root-ui/container/container.component'
 
 import { AppRootUiComponent } from './app-root-ui/app-root-ui.component';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [ContainerComponent]
