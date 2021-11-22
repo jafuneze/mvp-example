@@ -1,0 +1,28 @@
+<h2> {{ title }} </h2>
+
+<form [formGroup]="itemGroup" (ngSubmit)="onSubmit()">
+    <label for="name"> Name </label>
+    <input type="text" formControlName="name">
+
+    <label for="active"> Active </label>
+    <input type="checkbox" formControlName="active">
+
+    <p>Complete the form to enable button.</p>
+    <button type="submit" [disabled]="!itemGroup.valid">Submit</button>
+</form>
+
+<hr>
+
+<p>Form Value: {{ itemGroup.value | json }}</p>
+
+<p>Form Status: {{ itemGroup.status }}</p>
+
+<hr>
+
+
+<ul class="items">
+    <li *ngFor="let item of items">
+        <span class="badge">{{item.id}}</span>
+        <span class="badge">{{item.name}}</span>
+    </li>
+</ul>
